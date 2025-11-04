@@ -44,7 +44,8 @@
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripButtonExcluir = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton13 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton12 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonant = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonProx = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton11 = new System.Windows.Forms.ToolStripButton();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -125,7 +126,8 @@
             this.toolStripLabel1,
             this.toolStripButtonExcluir,
             this.toolStripButton13,
-            this.toolStripButton12,
+            this.toolStripButtonant,
+            this.toolStripButtonProx,
             this.toolStripButton11});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
@@ -141,7 +143,6 @@
             this.toolStripButton10.Name = "toolStripButton10";
             this.toolStripButton10.Size = new System.Drawing.Size(54, 54);
             this.toolStripButton10.Text = "toolStripButton1";
-            this.toolStripButton10.Click += new System.EventHandler(this.toolStripButton10_Click);
             // 
             // toolStripButtonSalvar
             // 
@@ -151,7 +152,6 @@
             this.toolStripButtonSalvar.Name = "toolStripButtonSalvar";
             this.toolStripButtonSalvar.Size = new System.Drawing.Size(54, 54);
             this.toolStripButtonSalvar.Text = "toolStripButton1";
-            this.toolStripButtonSalvar.Click += new System.EventHandler(this.toolStripButtonSalvar_Click);
             // 
             // toolStripButton8
             // 
@@ -243,8 +243,7 @@
             this.toolStripButtonExcluir.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonExcluir.Name = "toolStripButtonExcluir";
             this.toolStripButtonExcluir.Size = new System.Drawing.Size(54, 54);
-            this.toolStripButtonExcluir.Text = "toolStripButton1";
-            this.toolStripButtonExcluir.Click += new System.EventHandler(this.toolStripButton14_Click);
+            this.toolStripButtonExcluir.Text = "toolStripButtonLimpar";
             // 
             // toolStripButton13
             // 
@@ -255,14 +254,24 @@
             this.toolStripButton13.Size = new System.Drawing.Size(54, 54);
             this.toolStripButton13.Text = "toolStripButton1";
             // 
-            // toolStripButton12
+            // toolStripButtonant
             // 
-            this.toolStripButton12.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton12.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton12.Image")));
-            this.toolStripButton12.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton12.Name = "toolStripButton12";
-            this.toolStripButton12.Size = new System.Drawing.Size(54, 54);
-            this.toolStripButton12.Text = "toolStripButton1";
+            this.toolStripButtonant.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButtonant.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonant.Image")));
+            this.toolStripButtonant.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonant.Name = "toolStripButtonant";
+            this.toolStripButtonant.Size = new System.Drawing.Size(54, 54);
+            this.toolStripButtonant.Text = "toolStripButtonAnt";
+            this.toolStripButtonant.Click += new System.EventHandler(this.toolStripButtonant_Click_1);
+            // 
+            // toolStripButtonProx
+            // 
+            this.toolStripButtonProx.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButtonProx.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonProx.Image")));
+            this.toolStripButtonProx.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonProx.Name = "toolStripButtonProx";
+            this.toolStripButtonProx.Size = new System.Drawing.Size(54, 54);
+            this.toolStripButtonProx.Text = "toolStripButtonPro";
             // 
             // toolStripButton11
             // 
@@ -342,7 +351,6 @@
             this.tabPage1.Size = new System.Drawing.Size(1201, 454);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
-            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
             // 
             // dateTimePickerValidade
             // 
@@ -360,7 +368,6 @@
             this.label25.TabIndex = 50;
             this.label25.Text = "Selecione uma imagem para o\r\n produto";
             this.label25.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label25.Click += new System.EventHandler(this.label25_Click);
             // 
             // buttonEscolherImagem
             // 
@@ -370,7 +377,6 @@
             this.buttonEscolherImagem.TabIndex = 49;
             this.buttonEscolherImagem.Text = "Carregar foto";
             this.buttonEscolherImagem.UseVisualStyleBackColor = true;
-            this.buttonEscolherImagem.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBoxProduto
             // 
@@ -417,7 +423,6 @@
             this.textBox18.Name = "textBox18";
             this.textBox18.Size = new System.Drawing.Size(116, 20);
             this.textBox18.TabIndex = 43;
-            this.textBox18.TextChanged += new System.EventHandler(this.textBox18_TextChanged);
             // 
             // label22
             // 
@@ -429,7 +434,6 @@
             this.label22.Size = new System.Drawing.Size(52, 13);
             this.label22.TabIndex = 44;
             this.label22.Text = "Comissão";
-            this.label22.Click += new System.EventHandler(this.label22_Click);
             // 
             // dataGridViewProdutos
             // 
@@ -438,7 +442,6 @@
             this.dataGridViewProdutos.Name = "dataGridViewProdutos";
             this.dataGridViewProdutos.Size = new System.Drawing.Size(570, 166);
             this.dataGridViewProdutos.TabIndex = 42;
-            this.dataGridViewProdutos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewCarrinho_CellContentClick);
             // 
             // label21
             // 
@@ -461,7 +464,6 @@
             this.label20.Size = new System.Drawing.Size(47, 13);
             this.label20.TabIndex = 40;
             this.label20.Text = "validade";
-            this.label20.Click += new System.EventHandler(this.label20_Click);
             // 
             // textBoxMarca
             // 
@@ -539,7 +541,6 @@
             this.textBoxPrecoAtacado.Name = "textBoxPrecoAtacado";
             this.textBoxPrecoAtacado.Size = new System.Drawing.Size(143, 20);
             this.textBoxPrecoAtacado.TabIndex = 16;
-            this.textBoxPrecoAtacado.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
             // 
             // textBoxPrecoVenda
             // 
@@ -561,7 +562,6 @@
             this.textBoxLucroPercent.Name = "textBoxLucroPercent";
             this.textBoxLucroPercent.Size = new System.Drawing.Size(75, 20);
             this.textBoxLucroPercent.TabIndex = 10;
-            this.textBoxLucroPercent.TextChanged += new System.EventHandler(this.textBoxLucroPercent_TextChanged);
             // 
             // textBoxPrecoCusto
             // 
@@ -576,7 +576,6 @@
             this.textBoxDescricao.Name = "textBoxDescricao";
             this.textBoxDescricao.Size = new System.Drawing.Size(583, 20);
             this.textBoxDescricao.TabIndex = 3;
-            this.textBoxDescricao.TextChanged += new System.EventHandler(this.textBoxDescricao_TextChanged);
             // 
             // textBoxCod
             // 
@@ -584,7 +583,6 @@
             this.textBoxCod.Name = "textBoxCod";
             this.textBoxCod.Size = new System.Drawing.Size(124, 20);
             this.textBoxCod.TabIndex = 1;
-            this.textBoxCod.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label16
             // 
@@ -618,7 +616,6 @@
             this.label18.Size = new System.Drawing.Size(47, 13);
             this.label18.TabIndex = 33;
             this.label18.Text = "Garantia";
-            this.label18.Click += new System.EventHandler(this.label18_Click);
             // 
             // label19
             // 
@@ -707,7 +704,6 @@
             this.label9.Size = new System.Drawing.Size(78, 13);
             this.label9.TabIndex = 17;
             this.label9.Text = "Preço Atacado";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
             // label8
             // 
@@ -815,7 +811,6 @@
             this.label1.Size = new System.Drawing.Size(46, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Código";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // toolStripButtonNovo
             // 
@@ -838,7 +833,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PDV";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.PDV_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.tabPage1.ResumeLayout(false);
@@ -868,7 +862,7 @@
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;
         private System.Windows.Forms.ToolStripButton toolStripButtonExcluir;
         private System.Windows.Forms.ToolStripButton toolStripButton13;
-        private System.Windows.Forms.ToolStripButton toolStripButton12;
+        private System.Windows.Forms.ToolStripButton toolStripButtonant;
         private System.Windows.Forms.ToolStripButton toolStripButton11;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage1;
@@ -924,5 +918,6 @@
         private System.Windows.Forms.Button buttonEscolherImagem;
         private System.Windows.Forms.ComboBox comboBoxUnidade;
         private System.Windows.Forms.DateTimePicker dateTimePickerValidade;
+        private System.Windows.Forms.ToolStripButton toolStripButtonProx;
     }
 }

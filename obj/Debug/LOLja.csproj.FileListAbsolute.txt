@@ -44,3 +44,5 @@ C:\Users\baruque.rsilva\source\repos\LOLja\LOLja\obj\Debug\LOLja.csproj.Up2Date
 C:\Users\baruque.rsilva\source\repos\LOLja\LOLja\obj\Debug\LOLja.exe
 C:\Users\baruque.rsilva\source\repos\LOLja\LOLja\obj\Debug\LOLja.pdb
 C:\Users\baruque.rsilva\source\repos\LOLja\LOLja\obj\Debug\LOLja.exe.config
+C:\Users\baruque.rsilva\source\repos\LOLja\LOLja\obj\Debug\LOLja.Clientes.resources
+C:\Users\baruque.rsilva\source\repos\LOLja\LOLja\obj\Debug\LOLja.fornecedor.resources

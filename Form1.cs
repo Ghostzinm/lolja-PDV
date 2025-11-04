@@ -68,5 +68,22 @@ namespace LOLja
             pDV.Show();
 
         }
+
+        private void toolStripButton12_Click(object sender, EventArgs e)
+        {
+            Clientes cad_Produto = new Clientes();
+            cad_Produto.ShowDialog();
+        }
+
+        private void toolStripButton1_Click_1(object sender, EventArgs e)
+        {
+            fornecedor fornecedor = new fornecedor();
+            fornecedor.Show();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
