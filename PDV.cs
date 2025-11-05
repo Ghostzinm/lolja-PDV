@@ -29,12 +29,12 @@ namespace LOLja
 
         private void PDV_Load(object sender, EventArgs e)
         {
-            // Inicializações adicionais se necessário
+            CarregarProdutos();
         }
 
         private void PDV_Shown(object sender, EventArgs e)
         {
-            CarregarProdutos();
+            
         }
 
         private void CarregarProdutos()
